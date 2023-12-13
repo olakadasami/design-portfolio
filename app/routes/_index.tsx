@@ -1,4 +1,11 @@
 import type { MetaFunction } from "@remix-run/node";
+import AboutSection from "~/features/About/AboutSection";
+import ContactSection from "~/features/Contact/ContactSection";
+import DesignSection from "~/features/Designs/DesignSection";
+import Footer from "~/features/Footer/Footer";
+import Header from "~/features/Header/Header";
+import Navbar from "~/features/Navigation/Navbar";
+import SpecializationSection from "~/features/Specialization/SpecializationSection";
 
 export const meta: MetaFunction = () => {
   return [
@@ -9,33 +16,14 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
+    <div className="relative">
+      <Navbar />
+      <Header />
+      <DesignSection />
+      <AboutSection />
+      <SpecializationSection />
+      <ContactSection />
+      <Footer />
     </div>
   );
 }
