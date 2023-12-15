@@ -1,4 +1,3 @@
-import { Link } from "@remix-run/react";
 import type { FC } from "react";
 
 type NavItemProps = {
@@ -8,9 +7,9 @@ type NavItemProps = {
 
 const NavItem: FC<NavItemProps> = ({ href, title }) => {
   return (
-    <Link to={href}>
+    <a className="text-lg cursor-pointer" href={href}>
       <li>{title}</li>
-    </Link>
+    </a>
   );
 };
 

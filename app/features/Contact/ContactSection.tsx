@@ -4,7 +4,7 @@ import Socials from "./Socials";
 
 const ContactSection = () => {
   return (
-    <section className="px-20 py-10 relative">
+    <section id="contact" className="px-20 py-10 relative">
       {/* Section heading */}
       <SectionHeading left title="contact me" />
 

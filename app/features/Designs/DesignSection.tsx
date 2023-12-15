@@ -7,7 +7,7 @@ import { TfiArrowTopRight } from "react-icons/tfi/index.js";
 
 const DesignSection = () => {
   return (
-    <section className="py-10 px-20">
+    <section id="designs" className="py-10 px-20">
       <SectionHeading title="designs" />
 
       {/* Designs */}

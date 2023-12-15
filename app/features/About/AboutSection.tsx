@@ -4,7 +4,7 @@ import SectionHeading from "~/components/SectionHeading";
 
 const AboutSection = () => {
   return (
-    <section className="py-10 px-20 relative">
+    <section id="about" className="py-10 px-20 relative">
       {/* Section title */}
       <SectionHeading title="about me" />
 

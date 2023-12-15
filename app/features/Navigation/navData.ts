@@ -1,14 +1,16 @@
 export const navData = [
   {
     title: "Work",
-    href: "/",
+    href: "#designs",
   },
+  {},
   {
     title: "About",
-    href: "/",
+    href: "#about",
   },
+  {},
   {
     title: "Contact",
-    href: "/",
+    href: "#contact",
   },
 ];

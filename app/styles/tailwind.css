@@ -9,3 +9,7 @@
   background-size: contain;
   background-position: center;
 }
+
+html {
+  scroll-behavior: smooth;
+}

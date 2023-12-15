@@ -5,12 +5,16 @@ import DesignSection from "~/features/Designs/DesignSection";
 import Footer from "~/features/Footer/Footer";
 import Header from "~/features/Header/Header";
 import Navbar from "~/features/Navigation/Navbar";
+import ReelsSection from "~/features/Reels/ReelsSection";
 import SpecializationSection from "~/features/Specialization/SpecializationSection";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "DesignBro" },
+    {
+      name: "description",
+      content: "Welcome to my portfolio website, I am DesignBro",
+    },
   ];
 };
 
@@ -19,6 +23,7 @@ export default function Index() {
     <div className="relative">
       <Navbar />
       <Header />
+      <ReelsSection />
       <DesignSection />
       <AboutSection />
       <SpecializationSection />
